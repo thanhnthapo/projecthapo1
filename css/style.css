@@ -8,8 +8,8 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-html {
-    font-family: "Roboto";
+body {
+    font-family: 'Roboto', sans-serif;
     line-height: 1;
     font-weight: 400;
     max-width: 1920px;
@@ -38,13 +38,14 @@ button {
 /* Your style start from here */
 
 .header {
-    max-width: 1920px;
+    min-width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .banner {
     height: 875px;
-    width: 1920px;
+    min-width: 1920px;
     background-image: url("../image/banner.jpg");
     -webkit-background-size: cover;
     background-size: 100%;
@@ -59,16 +60,11 @@ button {
     top: 53px;
     right: 510px;
     bottom: 806px;
-    left: 1344px;
-}
-
-.about-us {
     text-transform: uppercase;
     color: #283238;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 16px;
-    text-decoration: none;
     white-space: nowrap;
 }
 
@@ -84,19 +80,18 @@ button {
     position: absolute;
     top: 43px;
     right: 390px;
-    bottom: 796px;
-    left: 1448px;
 }
 
 .hapo-erp {
     position: absolute;
     margin-left: 43%;
-    padding-top: 13.09%; 
+    padding-top: 13.07%; 
 }
 .criteria {
-    margin:0 30%;
-    width: 40%;
+    left: 32%;
+    width: 100%;
     height: 60%;
+    position: absolute;
     letter-spacing: -0.07px;
     line-height: 48px;
 }
@@ -104,7 +99,7 @@ button {
     position: relative;
     float: left;
     font-size: 36px;;
-    margin-top: 50%;
+    margin-top: 20%;
     color: #283238;
 }
 .criteria ul li img { 
@@ -114,8 +109,10 @@ ul li.last-criteria {
     padding-left: 208px; 
 }
 .title { 
-    width: 100%; 
-    margin: 0 35%; 
+    width: 100%;
+    top: 60%;
+    left: 35%; 
+    position: absolute;
     font-size: 18px;
     color: #283238; 
 }
@@ -126,13 +123,15 @@ button.start-now {
     border-radius: 100px;
     background: linear-gradient(311.12deg, #B4EC51 0%, #429321 100%);
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5);
- 
+
 }
-.btn-top{
-       margin: 2% 45%;
+.btn-top {
+    position: absolute;
+    top: 70%;
+    left: 45%;
 }
-.btn-body{
-    margin: 8% 0%; 
+.btn-body {
+    margin: 4% 0%; 
 }
 
 .container {
@@ -141,19 +140,22 @@ button.start-now {
 }
 .wrapper-one{ 
     height: 50%;
+    position: relative;
 }
 .wrapper-two{
     background-color: #F6F6F6;
     height: 50%;
+    position: relative;
 }
 .content-one {
-   
     margin-left: 20%;
     margin-right: 20%;
+    position: absolute;
 }
 .content-two { 
     margin-left: 20%;
     margin-right: 20%;
+    position: absolute;
 }
 .content-img, 
 .content-right{
@@ -177,28 +179,35 @@ button.start-now {
     line-height: 36px;
     margin-left: 50px;
 }
+.content-member img {
+    float: left;
+    margin: 0 5px 20px 0px;
+}
+.content-member p {
+    margin-bottom: 15px;
+}
 .content-notes {
-    padding: 25px 0;
+    margin: 25px 0;
 }
 
-.manager{
+.manager {
     background: linear-gradient(315deg, #B4EC51 0%, #429321 100%);
     width: 100%;
     height: 322px;
     position: relative;
 }
-.manager ul{
+.manager ul {
     margin-left: 22.4%;
     position: absolute;
 }
-.manager ul li{ 
+.manager ul li { 
     float: left;
     width: 69px;
     height: 42px;
     margin: 98px 65px;
     text-transform: uppercase; 
 }
-.manager ul li p{
+.manager ul li p {
     margin-left: 27px;
     color: #ffffff;
     font-size: 16px;    
@@ -206,17 +215,17 @@ button.start-now {
     line-height: 21px;  
     text-align: center;
 }
-.corner-greate{
+.corner-greate {
     box-sizing: border-box; 
     height: 109.5px;    
     width: 109.5px;
     border-radius: 50%;
     border:2px solid #FFFFFF;
 }
-.corner-greate img{
+.corner-greate img {
     margin: 35px auto
 }
-.corner-small{
+.corner-small {
     box-sizing: border-box; 
     height: 32px;   
     width: 32px; 
@@ -225,9 +234,72 @@ button.start-now {
     border: 2px solid #FFFFFF;    
     background-color: #7CB342;
 }
-.corner-small p.number{   
+.corner-small p.number {   
     color: #FFFFFF; 
     font-family: Roboto;    
     font-size: 24px;
     margin: 2px 8px;
+}
+
+.our-customer {
+    background-image: url(../image/background-customer.jpg);
+    width: 1920px;
+    height: 544px;
+    background-size: 100% 100%;
+    margin:0 auto;
+    position: relative;
+}
+.our-customer .customer-content {
+    height: 11.5%;   
+    width: 16%;
+    position: absolute;
+    color: #FFFFFF;
+    top: 9.1%;
+    left: 42.5%;
+    margin:0 auto;
+    letter-spacing: -0.09px;
+    font-weight: 100;
+    line-height: 63px;
+    font-size: 48px;
+}
+.our-customer .customer-name ul {
+    position: absolute; 
+    margin-left: 20.31%;
+}
+.our-customer .customer-name ul li {
+    float: left;
+    margin-top: 165px;
+    margin-left: 32px;
+    margin-right: 32px;
+    color: #FFFFFF;
+}   
+.our-customer .customer-name ul li img{
+    margin-bottom: 16px;
+}
+.content-center {
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: -0.03px;    
+    line-height: 13px;
+}
+.customer-description{
+    color: #FFFFFF;
+    width: 750px;
+    height: 90px;
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 20%;
+}
+.customer-description h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 60px;
+    color: #cec8c8;
+    font-weight: 10;
+}
+.customer-description p{
+    font-size: 18px;
+    font-weight: 300;   
+    letter-spacing: -0.03px;    
+    line-height: 30px;  
+    text-align: justify;
 }

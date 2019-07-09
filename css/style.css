@@ -371,12 +371,11 @@ button.start-now {
     display: flex;
     padding-top: 54px;
     padding-bottom: 57px;
-    margin-left: 20.26%;
-    /*margin-right: 389px;*/
+    margin-left: 20.31%;
+    margin-right: 20.31%;
 }
 .footer .container .logo-footer {
-    height: 29px;
-    width: 96px;
+    height: 78px;
 }
 .footer .container .logo-footer .logo-erp {
     color: #AED581;
@@ -395,7 +394,7 @@ button.start-now {
 }
 .footer .container .footer-flex-row {
     display: flex;
-    width: 57.5%;
+    width: 75.175%;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -419,10 +418,9 @@ button.start-now {
 }
 .footer .container .icon-media {
     display: flex;
-    width: 10.89%;
+    width: 14.59%;
     margin-top: 54px;
-    margin-left: 6.2%;
-    /*margin-right: 20.26%;*/
+    margin-left: 10.44%;
     justify-content: space-between;
 }
 

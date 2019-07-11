@@ -19,11 +19,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    max-width: 1920px;
+    width: 1920px;
 }
 
 ul li {
- list-style-type:none;
+   list-style-type:none;
 }
 img {
     display: block;
@@ -46,37 +46,32 @@ button {
 
 /* Your style start from here */
 
-.header {
-    max-width: 1920px;  
-}
 
 .banner {
     height: 875px;
-    max-width: 1920px;
     background-image: url("../image/banner.jpg");
-    -webkit-background-size: cover;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center center;
 }
 .banner .header-top {
-    width: 186px;
+    width: 100%;
     display: flex;
     font-size: 12px;
     padding-top: 43px;
-    margin-left: 83.2%;
-    justify-content: space-between; 
+    justify-content: flex-end; 
 }
 
 .banner .header-top a {
     color: #283238;
     letter-spacing: 1px;
     line-height: 36px;
+    margin-right: 38px;
     white-space: nowrap;
     text-transform: uppercase;
 }
 
-.rectangle-2 {
+.sign-in {
     height: 36px;
     width: 82px;
     border: 2px solid #8BC34A;
@@ -88,7 +83,7 @@ button {
 }
 .banner .align {
     width: 57.96%;
-    margin: 0px auto;
+    margin: 0 auto;
     text-align: center;
 }
 .banner .align .hapo-erp {
@@ -98,7 +93,7 @@ button {
 }
 .hapo-erp a { 
     color: #AED581; 
-    margin: 0px auto;
+    margin: 0 auto;
     font-family: Enso;  
     font-size: 64px;    
     line-height: 77px;
@@ -165,10 +160,9 @@ button.start-now {
     padding: 100px 0px;
     width: 100%;
 }
-.content-one,
-.content-two {
+.content {
     width: 1140px;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -186,7 +180,9 @@ button.start-now {
 .content-title {  
     margin-bottom: 15px;
 }
-
+.content-title img {
+    float: left;
+}
 .content-title p {
     color: #444444;   
     font-size: 48px;    
@@ -206,7 +202,7 @@ button.start-now {
 }
 .content-description img {
     float: left;
-    margin: 0px 18px 27px 0px;
+    margin: 0 18px 27px 0;
 }
 .content-member p {
     font-size: 13px;    
@@ -224,10 +220,6 @@ button.start-now {
     line-height: 24px;
     text-align: justify;
 }
-.content-description p.content-center {
-    /*margin: 17px 0px;*/
-}
-
 .manager {
     background: linear-gradient(315deg, #B4EC51 0%, #429321 100%);
     width: 100%;
@@ -286,7 +278,7 @@ button.start-now {
     margin:0 auto;
     position: relative;
     padding-top: 50px;
-    padding-bottom: 74px;
+    padding-bottom: 29px;
 }
 .our-customer .customer-content {
     /*height: 63px;   */
@@ -301,12 +293,12 @@ button.start-now {
     letter-spacing: -0.09px;    
     line-height: 63px;
 }
-.our-customer .list-customer{
+.our-customer .customer-list{
     display: flex;
     width:  1140px;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 0px auto;
+    margin: 0 auto;
     padding-bottom: 39px;
 }
 .our-customer .customer-name .customer-job {
@@ -317,8 +309,11 @@ button.start-now {
     letter-spacing: -0.03px;    
     line-height: 13px;  
     text-align: center;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-top: 16px;
+}
+.our-customer .customer-name .customer-job p {
+    margin-bottom: 0rem;
 }
 .customer-description .icon {
     width: 72px;
@@ -332,7 +327,8 @@ button.start-now {
 .customer-description .icon-end {   
     opacity: 0.4;   
     color: #FFFFFF;
-    margin-left: 70.9%;  
+    margin-left: 70.9%;
+    margin-top: -27px;  
 }
 .customer-description .icon span {
     font-size: 72px;
@@ -347,6 +343,7 @@ button.start-now {
     height: 90px;
     font-size: 18px;
     margin-left: 30.5%;
+    margin-top: -26px;
     font-weight: 300;
     letter-spacing: -0.03px;
     line-height: 30px;
@@ -396,7 +393,7 @@ button.start-now {
     letter-spacing: -0.02px;    
     line-height: 20px;
 }
-.footer .container .footer-flex-col .firts {  
+.footer .container .footer-flex-col .first{  
     max-width: 106px;
     color: #8BC34A;
     text-transform: uppercase;    
@@ -420,10 +417,10 @@ button.start-now {
 /*Reponsive Mobile*/
 @media only screen and (max-width: 480px) {
     body {
+        max-width: 480px;
         margin: 0px;
         padding: 0px;
     }
-
     .content-none {
         display: none;
     }
@@ -431,9 +428,8 @@ button.start-now {
         width: 459.57px;
     }
     .header {
-        width: 100%;  
+        max-width: 480px;  
     }
-
     .banner {
         height: 265.75px;
         width: 100%;
@@ -458,7 +454,7 @@ button.start-now {
         text-transform: uppercase;
     }
 
-    .rectangle-2 {
+    .header-top .sign-in {
         height: 36px;
         width: 82px;
         border: 2px solid #8BC34A;
@@ -471,7 +467,7 @@ button.start-now {
     }
     .banner .align {
         width: 64.25%;
-        margin: 0px auto;
+        margin: 0 auto;
         text-align: center;
         margin-top: 8px;
         position: relative;
@@ -479,7 +475,7 @@ button.start-now {
     .banner .align .hapo-erp {
         width: 96px;
         height: 29px;
-        margin: 0px auto;
+        margin: 0 auto;
     }
     .hapo-erp a { 
         color: #AED581; 
@@ -521,22 +517,19 @@ button.start-now {
     .btn-top {
         margin-top: 15px;
     }
-
     .wrapper-one,
     .wrapper-two { 
-        width: 100%; 
+        width: 480px; 
         padding: 30px 0px;
     }
 
     .wrapper-two {
         background-color: #F6F6F6;
     }
-    .content-one,
-    .content-two {
+    .content {
         width: 100%; 
         display: flex;
         flex-direction: column;
-
     }
     .content-left,  
     .content-right {
@@ -551,7 +544,7 @@ button.start-now {
     }
     .content-title {
         height: 32px;   
-        margin: 0px auto; 
+        margin: 0 auto; 
     }
     .content-title p {
         padding-left: 34px;
@@ -562,6 +555,7 @@ button.start-now {
     .content-title img {
         width: 20px;
         margin-top: 7px;
+        float: left;
     }
     .content-description {
         height: 168px; 
@@ -580,7 +574,6 @@ button.start-now {
     .content-description img { 
         width:  18px;
         height: 24px;
-        /*margin: 0px 13px 43px 0px;*/
     }
     .content-notes {
         width: 460px; 
@@ -634,7 +627,7 @@ button.start-now {
     .icon-slide {
         width: 63.5px;
         padding-top: 24.5px;
-        margin: 0px auto;
+        margin: 0 auto;
         display: flex;
         justify-content: space-between;
     }
@@ -649,6 +642,7 @@ button.start-now {
     }
 
     .our-customer {
+        margin: 0;
         width: 480px;
         background-image: url(../image/our-custommer.jpg);
         padding-top: 25px;
@@ -664,9 +658,9 @@ button.start-now {
         letter-spacing: -0.05px;   
         line-height: 32px;
     }
-    .our-customer .list-customer {
+    .our-customer .customer-list {
         width: 95.8%;
-        margin: 0px 10px;
+        margin: 0 10px;
         padding-bottom: 7.5px;
     }
     .our-customer .customer-name img {
@@ -674,7 +668,7 @@ button.start-now {
         height: 80px
     }
     .our-customer .customer-name .customer-job {
-        padding: 0px;
+        padding: 0;
         height: 49px;   
         width: 56.31px;
         font-size: 13px;
@@ -701,13 +695,13 @@ button.start-now {
         margin-right: 10px;  
     }
     .customer-description .icon span {
-     font-size: 48px;
-     font-weight: 100;   
-     letter-spacing: -0.09px;   
-     line-height: 48px; 
- }
- .customer-description .meta-description { 
-    margin: 0px 10px;
+       font-size: 48px;
+       font-weight: 100;   
+       letter-spacing: -0.09px;      
+       line-height: 48px; 
+   }
+   .customer-description .meta-description { 
+    margin: 0 10px;
     width: 460px;
     height: 100px;
     font-size: 14px;
@@ -738,13 +732,15 @@ button.start-now {
     font-size: 20px;    
     line-height: 24px;
 }
-.footer .container .footer-flex-col .firts {  
+.footer .container .footer-flex-col .first{  
     font-size: 12px;    
     line-height: 16px;
 }
-
+.footer .container .footer-flex-col p {
+    margin-bottom: 0;
+}
 .footer .container .icon-media {
-    margin: 0px;
+    margin: 0;
     width: 100%;
     display: flex;
     padding-top: 24px;
@@ -758,5 +754,6 @@ button.start-now {
     letter-spacing: -0.02px;
     text-align: right;
 }
+
 }
 
